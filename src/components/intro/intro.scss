@@ -1,0 +1,110 @@
+.intro{
+    height:100%;
+    width: 100%;
+    background:linear-gradient(30deg, rgba(17,5,154,0.8298669809720763) 17%, rgba(240,20,235,0.8186624991793592) 61%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+    .left{
+        flex:4;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imgContainer{
+            height: 70%;
+            width: 80%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .right{
+        position: relative;
+        flex:8;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h1{
+            font-size: 50px;
+            margin-bottom: 50px;
+            span{
+                color:yellow;
+                font-size: 100px;
+                
+            }
+            .ityped-cursor{
+                animation:blink 1s infinite;
+            }
+            @keyframes blink{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 0;
+                }
+                95%{
+                    opacity: 1;
+                }
+            }
+        }
+        button{
+            position: absolute;
+            font-size: 20px;
+            bottom:200px;
+            height: 50px;
+            width: 130px;
+            outline: none !important;
+            border:  #0a0423 solid 2px !important;
+            border-radius: 25px;
+            cursor: pointer;
+            overflow: hidden;
+            color:yellow;
+            background-color: rgb(1, 1, 32);
+            border: none;
+            box-shadow: inset 18px 18px 36px #180c47,
+            inset -18px -18px 36px #250d7e;
+            transition: all 1s ease;
+            -webkit-animation: slide 2s ease infinite;
+            animation: slide 2s ease infinite;
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+            
+
+            @keyframes slide{
+                0%{
+                    opacity:1;
+                }
+    
+                90%{
+                    opacity:1;
+                    bottom:180px;
+                }
+                100%{
+                    opacity: 0;
+                }
+    
+            }
+            
+
+            &:hover{
+                box-shadow: inset 21px 21px 41px #8d83b8,
+                inset -21px -21px 41px #240c7b;
+            
+            a{
+                text-decoration: none;
+                color: yellow;
+            }
+            }
+        }
+
+        
+    }
+}
